@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\TicketShopTestService</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Castle.Core.dll">
+      <publishTime>12/16/2014 20:23:40</publishTime>
+    </File>
+    <File Include="bin/Castle.Windsor.dll">
+      <publishTime>12/16/2014 20:23:52</publishTime>
+    </File>
+    <File Include="bin/Castle.Windsor.Extension.dll">
+      <publishTime>03/20/2012 11:34:45</publishTime>
+    </File>
+    <File Include="bin/FluentNHibernate.dll">
+      <publishTime>12/15/2014 20:59:54</publishTime>
+    </File>
+    <File Include="bin/Iesi.Collections.dll">
+      <publishTime>12/15/2014 20:59:54</publishTime>
+    </File>
+    <File Include="bin/NHibernate.dll">
+      <publishTime>12/15/2014 20:59:54</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Core.dll">
+      <publishTime>12/20/2014 22:08:22</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Core.Messages.dll">
+      <publishTime>12/20/2014 22:08:23</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Server.MessageHandler.dll">
+      <publishTime>12/20/2014 22:08:23</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Server.Repository.dll">
+      <publishTime>12/20/2014 22:08:23</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Server.Service.dll">
+      <publishTime>12/20/2014 22:08:23</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Server.WcfService.Core.dll">
+      <publishTime>12/20/2014 22:08:24</publishTime>
+    </File>
+    <File Include="bin/TicketShop.Server.WcfService.dll">
+      <publishTime>12/20/2014 22:08:24</publishTime>
+    </File>
+    <File Include="TicketShopWcfService.svc">
+      <publishTime>12/16/2014 16:09:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>12/20/2014 21:14:10</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

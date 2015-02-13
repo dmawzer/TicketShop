@@ -1,0 +1,10 @@
+D:\Projects\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.dll
+D:\Projects\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.pdb
+D:\Projects\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.csprojResolveAssemblyReference.cache
+D:\Projects\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.dll
+D:\Projects\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.csprojResolveAssemblyReference.cache

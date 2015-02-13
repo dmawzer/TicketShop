@@ -1,0 +1,13 @@
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\TicketShop.Server.Repository.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\TicketShop.Server.Repository.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\FluentNHibernate.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\Iesi.Collections.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\NHibernate.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\TicketShop.Core.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\TicketShop.Core.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\FluentNHibernate.xml
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\Iesi.Collections.xml
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\bin\Release\NHibernate.xml
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\obj\Release\TicketShop.Server.Repository.csprojResolveAssemblyReference.cache
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\obj\Release\TicketShop.Server.Repository.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Server.Repository\obj\Release\TicketShop.Server.Repository.pdb

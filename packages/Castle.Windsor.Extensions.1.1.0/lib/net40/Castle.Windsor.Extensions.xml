@@ -1,0 +1,1028 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Castle.Windsor.Extensions</name>
+    </assembly>
+    <members>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly">
+            <summary>
+            Helper class to fetch assemblies
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.This">
+            <summary>
+            Get an assembly fetcher for current executing assembly
+            </summary>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.From(System.String)">
+            <summary>
+            Gets an assembly fetcher for the assembly name specified
+            </summary>
+            <param name="fileName">File name of the assembly</param>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.From(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets assembly fetchers for the assembly names specified
+            </summary>
+            <param name="fileNames">File names of the assemblies</param>
+            <returns>Assembly fetchers</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.Like(System.String)">
+            <summary>
+            Gets an assembly fetcher for all assembly files that match given 
+            file match pattern
+            </summary>
+            <param name="fileMatchPattern">File match pattern to use when scanning 
+            for assemblies</param>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.Like(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Gets an assembly fetcher for all assembly files that match given 
+            file match patterns
+            </summary>
+            <param name="fileMatchPatterns">File match pattern to use when scanning 
+            for assemblies</param>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.WithNamespace(System.String)">
+            <summary>
+            Gets an assembly fetcher for the assembly that contains the given
+            namespace
+            </summary>
+            <param name="nameSpace">Namespace to be used when searching assembly</param>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.ThatContains``1">
+            <summary>
+            Gets an assembly fetched for the assembly that contains the given
+            type
+            </summary>
+            <typeparam name="TType">The type to be looked up</typeparam>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.FetchAssembly.ThatContains(System.Type)">
+            <summary>
+            Gets an assembly fetched for the assembly that contains the given
+            type
+            </summary>
+            <param name="type">The type to be looked up</param>
+            <returns>An assembly fetcher</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher">
+            <summary>
+            Generic interface to be used for fetching assemblies
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher.FetchAssemblies">
+            <summary>
+            Fetches the assemblies
+            </summary>
+            <returns>A list of assemblies</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcherExtensions">
+            <summary>
+            IAssemblyFetcher extension methods
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcherExtensions.Concat(Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher,Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher)">
+            <summary>
+            Concatenate the current assembly fetcher with another one
+            </summary>
+            <param name="current">Current assembly fetcher</param>
+            <param name="assemblyFetcher">Assembly fetcher to be appended</param>
+            <returns>A collection of assembly fetchers</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcherExtensions.Concat(Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher,System.Collections.Generic.IEnumerable{Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher})">
+            <summary>
+            Concatenate the current assembly fetcher with another one
+            </summary>
+            <param name="current">Current assembly fetcher</param>
+            <param name="assemblyFetchers">Assembly fetchers to be appended</param>
+            <returns>A collection of assembly fetchers</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.MultipleAssemblyFetcher">
+            <summary>
+            Fetches multiple assemblies
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.AssemblyFetcher.MultipleAssemblyFetcher.m_fileMatchPatterns">
+            <summary>
+            All file match patterns
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.MultipleAssemblyFetcher.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileMatchPattern">File match pattern to use</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.MultipleAssemblyFetcher.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileMatchPatterns">File match patterns to use</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.MultipleAssemblyFetcher.FetchAssemblies">
+            <summary>
+            Fetches the assemblies
+            </summary>
+            <returns>A list of assemblies</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.NamespacedAssemblyFetcher">
+            <summary>
+            Namespaced assembly fetcher
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.AssemblyFetcher.NamespacedAssemblyFetcher.m_namespace">
+            <summary>
+            Namespace of the assembly to fetch
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.NamespacedAssemblyFetcher.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="nameSpace">The namespace of the assembly</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.NamespacedAssemblyFetcher.FetchAssemblies">
+            <summary>
+            Fetches the assemblies
+            </summary>
+            <returns>A list of assemblies</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher">
+            <summary>
+            Fetches the current executing assembly
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher.m_fileName">
+            <summary>
+            File name of the assembly
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher.m_assembly">
+            <summary>
+            The assembly to be fetched
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileName">[Optional] File name of the assembly to fetch. Defaults to null. If null, then
+            the current executing assembly is fetched</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher.#ctor(System.Reflection.Assembly)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="assembly">The assembly to be fetched</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.AssemblyFetcher.SingleAssemblyFetcher.FetchAssemblies">
+            <summary>
+            Fetches the assemblies
+            </summary>
+            <returns>A list of assemblies</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.DictionaryExtensions">
+            <summary>
+            Dictionary extensions
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.DictionaryExtensions.AddRange(System.Collections.IDictionary,System.Collections.IDictionary,System.Boolean)">
+            <summary>
+            Appends a dictionary to the current dictionary
+            </summary>
+            <param name="current">Current dictionary object</param>
+            <param name="dictionary">Dictionary to be added</param>
+            <param name="overwrite">[Optional] Whether to overwrite an existing value. Defaults to false</param>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.EPathType">
+            <summary>
+            Path type
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.EPathType.Absolute">
+            <summary>
+            Absolute path
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.EPathType.Virtual">
+            <summary>
+            Path relative to a web application directory
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.EPathType.Relative">
+            <summary>
+            Path relative to current directory
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.EPathType.Uri">
+            <summary>
+            Path is a URI
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.ExtendedCollectionResolver">
+            <summary>
+            A extended collection resolver which passes the inline parameters 
+            through down the resolving pipeline
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ExtendedCollectionResolver.m_kernel">
+            <summary>
+            Current kernel
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedCollectionResolver.#ctor(Castle.MicroKernel.IKernel)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="kernel">Current kernel</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedCollectionResolver.Resolve(Castle.MicroKernel.Context.CreationContext,Castle.MicroKernel.ISubDependencyResolver,Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Resolves the requested component
+            </summary>
+            <param name="context">Current creation context</param>
+            <param name="contextHandlerResolver">Current context's sub dependency resolver</param>
+            <param name="model">Component model to be resolved</param>
+            <param name="dependency">Dependency model to be resolved</param>
+            <returns>Resolved object if successful, else Exception</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.ExtendedDependencyResolver">
+            <summary>
+            Dependency resolver to allow assigning of default values for optional 
+            constructor parameters if not specified
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedDependencyResolver.RebuildContextForParameter(Castle.MicroKernel.Context.CreationContext,System.Type)">
+            <summary>
+            Rebuilds the creation context for the given parameter type
+            </summary>
+            <param name="current">Current creation context</param>
+            <param name="parameterType">Type of the parameter to be resolved</param>
+            <returns>The current creation context or a new creation context with all properties/inline
+            dependencies forwarded down the component resolving pipeline</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedDependencyResolver.CanResolveFromKernel(Castle.MicroKernel.Context.CreationContext,Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Whether the Castle kernel can resolve the dependency
+            </summary>
+            <param name="context">Current creation context</param>
+            <param name="model">Current component model</param>
+            <param name="dependency">Dependency to be resolved</param>
+            <returns>True if dependency is resolvable or if it has a default value</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedDependencyResolver.ResolveFromKernel(Castle.MicroKernel.Context.CreationContext,Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Resolve the dependency from the Castle kernel
+            </summary>
+            <param name="context">Current creation context</param>
+            <param name="model">Current component model</param>
+            <param name="dependency">Dependency to be resolved</param>
+            <returns>The resolved dependency object if resolvable or the default value of the dependency</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.ExtendedWindsorContainer">
+            <summary>
+            Extended Castle Windsor container
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.IExtendedWindsorContainer">
+            <summary>
+            Extended IWindsorContainer
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.IExtendedWindsorContainer.AddInlineArguments(System.Collections.IDictionary,System.Boolean)">
+            <summary>
+            Adds inline arguments to the store
+            </summary>
+            <param name="arguments">Inline arguments</param>
+            <param name="overwrite">[Optional] Whether to overwrite an existing value. Defaults to false</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.IExtendedWindsorContainer.AddInlineArguments(System.Object,System.Boolean)">
+            <summary>
+            Adds inline arguments to the store
+            </summary>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+            <param name="overwrite">[Optional] Whether to overwrite an existing value. Defaults to false</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.IExtendedWindsorContainer.RemoveInlineArgument(System.String)">
+            <summary>
+            Removes an inline argument from the store
+            </summary>
+            <param name="name">Name of the argument</param>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.IExtendedWindsorContainer.ConfigFile">
+            <summary>
+            XML configuration file
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.IExtendedWindsorContainer.Arguments">
+            <summary>
+            All available inline arguments
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.IExtendedWindsorContainer.CurrentArgumentsParser">
+            <summary>
+            Current properties parser
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.#ctor(System.String,Castle.Windsor.Extensions.ArgumentsParser)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configFile">XML configuration file</param>
+            <param name="parser">Arguments parser</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.#ctor(Castle.MicroKernel.IKernel,Castle.Windsor.IComponentsInstaller)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="kernel">Kernel to initialise with</param>
+            <param name="installer">Component installer to initialise with</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ProcessArguments(System.Collections.IDictionary)">
+            <summary>
+            Check whether argument parsing has already completed and 
+            if not parse them once. Also processes the given arguments
+            and appends them to the local argument store
+            </summary>
+            <param name="arguments">Arguments to be processed</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddChildContainer(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Registers a subcontainer. The components exposed by this container 
+            will be accessible from subcontainers. 
+            </summary>
+            <param name="childContainer">Child container to be added</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.GetChildContainer(System.String)">
+            <summary>
+            Gets a child container instance by name 
+            </summary>
+            <param name="name">The container's name</param>
+            <returns>The child container instance or null</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.RemoveChildContainer(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Removes (unregisters) a subcontainer.  The components exposed 
+            by this container will no longer be accessible to the child container 
+            </summary>
+            <param name="childContainer">Child container to remove</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddFacility``1(System.Action{``0})">
+            <summary>
+            Creates and adds an <see cref="T:Castle.MicroKernel.IFacility"/> facility to the container
+            </summary>
+            <typeparam name="TFacility">The facility type</typeparam>
+            <param name="onCreate">The callback for creation</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddFacility``1">
+            <summary>
+            Creates and adds an <see cref="T:Castle.MicroKernel.IFacility"/> facility to the container
+            </summary>
+            <typeparam name="TFacility">The facility type</typeparam>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddFacility(Castle.MicroKernel.IFacility)">
+            <summary>
+            Registers a facility within the container. 
+            </summary>
+            <param name="facility">Facility to be added</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Install(Castle.MicroKernel.Registration.IWindsorInstaller[])">
+            <summary>
+            Runs the <paramref name="installers"/> so that they can register components 
+            in the container. For details see the documentation at http://j.mp/WindsorInstall
+            </summary> 
+            
+            <remarks>
+            In addition to instantiating and passing every installer inline you can use 
+            helper methods on <see cref="T:Castle.Windsor.Installer.FromAssembly"/> class 
+            to automatically instantiate and run your installers. You can also use 
+            <see cref="N:Castle.Windsor.Configuration"/> class to install components 
+            and/or run aditional installers specofied in a configuration file
+            </remarks>
+            
+            <returns>
+            The container
+            </returns>
+            
+            <example> 
+            <code>
+            container.Install(new YourInstaller1(), new YourInstaller2(), new YourInstaller3()); 
+            </code> 
+            </example>
+            
+            <example> 
+            <code>
+            container.Install(FromAssembly.This(), Configuration.FromAppConfig(), new SomeOtherInstaller()); 
+            </code> 
+            </example>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Register(Castle.MicroKernel.Registration.IRegistration[])">
+            <summary>
+            Registers the components with the <see cref="T:Castle.Windsor.IWindsorContainer"/>. 
+            The instances of <see cref="T:Castle.MicroKernel.Registration.IRegistration"/> are 
+            produced by fluent registration API. Most common entry points are 
+            <see cref="M:Castle.MicroKernel.Registration.Component.For``1"/> method to register 
+            a single type or (recommended in most cases) 
+            <see cref="M:Castle.MicroKernel.Registration.AllTypes.FromThisAssembly"/>.
+            Let the Intellisense drive you through the fluent API past those entry points. For 
+            details see the documentation at http://j.mp/WindsorApi 
+            </summary>
+            
+            <example> 
+            <code>
+            container.Register(Component.For&lt;IService&gt;().ImplementedBy&lt;DefaultService&gt;().LifestyleTransient()); 
+            </code> 
+            </example>
+            
+            <example> 
+            <code>
+            container.Register(Classes.FromThisAssembly().BasedOn&lt;IService&gt;().WithServiceDefaultInterfaces().Configure(c =&gt; c.LifestyleTransient())); 
+            </code> 
+            </example>
+            
+            <param name="registrations">The component registrations created by 
+            <see cref="M:Castle.MicroKernel.Registration.Component.For``1"/>, 
+            <see cref="M:Castle.MicroKernel.Registration.AllTypes.FromThisAssembly"/> or 
+            different entry method to the fluent API.</param>
+            
+            <returns>The container</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Release(System.Object)">
+            <summary>
+            Releases a component instance 
+            </summary>
+            <param name="instance"/>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.String,System.Type,System.Object)">
+            <summary>
+            Returns a component instance by key and type and uses the
+            given inline arguments when resolving the component
+            </summary>
+            <param name="key">The key</param>
+            <param name="service">Component type</param>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+            <returns></returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.String,System.Type,System.Collections.IDictionary)">
+            <summary>
+            Returns a component instance by key and type and uses the
+            given inline arguments when resolving the component
+            </summary>
+            <param name="key">The key</param>
+            <param name="service">Component type</param>
+            <param name="arguments">Inline arguments</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.String,System.Type)">
+            <summary>
+            Returns a component instance by key and type specified
+            </summary>
+            <param name="key">The key</param>
+            <param name="service">Component type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1(System.String,System.Object)">
+            <summary>
+            Returns a component instance by key and uses the given
+            inline argument when resolving the component
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="key">The key</param>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1(System.String,System.Collections.IDictionary)">
+            <summary>
+            Returns a component instance by key and uses the given
+            inline argument when resolving the component
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="key">The key</param>
+            <param name="arguments">Inline arguments</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1(System.String)">
+            <summary>
+            Returns a component instance by the key
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="key">The key</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1(System.Object)">
+            <summary>
+            Returns a component and uses the given inline parameters
+            when resolving the component
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1(System.Collections.IDictionary)">
+            <summary>
+            Returns a component and uses the given inline parameters
+            when resolving the component
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="arguments">Inline parameters</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve``1">
+            <summary>
+            Returns a component
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.Type,System.Object)">
+            <summary>
+            Returns a component for given type and uses the given
+            inline arguments when resolving the component
+            </summary>
+            <param name="service">Component type</param>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.Type,System.Collections.IDictionary)">
+            <summary>
+            Returns a component for given type and uses the given
+            inline arguments when resolving the component
+            </summary>
+            <param name="service">The service to be resolved</param>
+            <param name="arguments">Inline arguments</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Resolve(System.Type)">
+            <summary>
+            Returns a component for given type
+            </summary>
+            <param name="service">Component type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll``1(System.Object)">
+            <summary>
+            Returns all valid components for given type and uses given
+            inline argument when resolving the components
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll``1(System.Collections.IDictionary)">
+            <summary>
+            Returns all valid components for given type and uses given
+            inline argument when resolving the components
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+            <param name="arguments">Inline arguments</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll``1">
+            <summary>
+            Resolves all valid components for given type
+            </summary>
+            <typeparam name="T">Component type</typeparam>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll(System.Type,System.Object)">
+            <summary>
+            Resolved all valid components for given type and uses the given
+            inline arguments when resolving the components
+            </summary>
+            <param name="service">Component type</param>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll(System.Type,System.Collections.IDictionary)">
+            <summary>
+            Resolved all valid components for given type and uses the given
+            inline arguments when resolving the components
+            </summary>
+            <param name="service">Component type</param>
+            <param name="arguments">Inline arguments</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.ResolveAll(System.Type)">
+            <summary>
+            Resolves all valid components for given type
+            </summary>
+            <param name="service">Component type</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.Dispose">
+            <summary>
+            Executes Dispose on underlying <see cref="T:Castle.MicroKernel.IKernel"/>
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddInlineArguments(System.Collections.IDictionary,System.Boolean)">
+            <summary>
+            Adds inline arguments to the store
+            </summary>
+            <param name="arguments">Inline arguments</param>
+            <param name="overwrite">[Optional] Whether to overwrite an existing value. Defaults to false</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.AddInlineArguments(System.Object,System.Boolean)">
+            <summary>
+            Adds inline arguments to the store
+            </summary>
+            <param name="argumentsAsAnonymousType">Inline arguments as an anonymous type</param>
+            <param name="overwrite">[Optional] Whether to overwrite an existing value. Defaults to false</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ExtendedWindsorContainer.RemoveInlineArgument(System.String)">
+            <summary>
+            Removes an inline argument from the store
+            </summary>
+            <param name="name">Name of the argument</param>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.ConfigFile">
+            <summary>
+            XML configuration file
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.Kernel">
+            <summary>
+            Current kernel instance
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.Name">
+            <summary>
+            Name of container
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.Installer">
+            <summary>
+            Current component installer
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.Parent">
+            <summary>
+            Gets or sets the parent container if this instance is a sub container. 
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.Arguments">
+            <summary>
+            All available inline arguments
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ExtendedWindsorContainer.CurrentArgumentsParser">
+            <summary>
+            Current properties parser
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.Parser.ArraySubParser">
+            <summary>
+            A generic array sub parser. This can handle properties defined as arrays in the 
+            XML config file
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.Parser.ISubParser">
+            <summary>
+            Generic sub parser interface
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ISubParser.CanParse(System.String,System.Type)">
+            <summary>
+            Whether the current sub parser can satisfy the supplied property
+            based on the key and/or type
+            </summary>
+            <param name="key">Property key</param>
+            <param name="type">Property type</param>
+            <returns>True if current sub parser can parse, else false</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ISubParser.Parse(Castle.MicroKernel.SubSystems.Conversion.IConversionManager,System.Xml.XmlNode,System.Type)">
+            <summary>
+            Parse the XML node for the property
+            </summary>
+            <param name="conversionManager">Current Castle Windsor conversion manager</param>
+            <param name="node">XML node containing the property data</param>
+            <param name="expectedType">Expected type of the property</param>
+            <returns>Parsed property value</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.Parser.ISubParser.Name">
+            <summary>
+            Name of the sub parser
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ArraySubParser.CanParse(System.String,System.Type)">
+            <summary>
+            Whether the current sub parser can satisfy the supplied property
+            based on the key and/or type
+            </summary>
+            <param name="key">Property key</param>
+            <param name="type">Property type</param>
+            <returns>True if current sub parser can parse, else false</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ArraySubParser.Parse(Castle.MicroKernel.SubSystems.Conversion.IConversionManager,System.Xml.XmlNode,System.Type)">
+            <summary>
+            Parse the XML node for the property
+            </summary>
+            <param name="conversionManager">Current Castle Windsor conversion manager</param>
+            <param name="node">XML node containing the property data</param>
+            <param name="expectedType">Expected type of the property</param>
+            <returns>Parsed property value</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.Parser.ArraySubParser.Name">
+            <summary>
+            Name of the sub parser
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.Parser.TypedDictionarySubParser">
+            <summary>
+            A generic sub parser for dictionary with known key/value. This can handles properties defined as
+            dictionaries in the XML config file
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.TypedDictionarySubParser.CanParse(System.String,System.Type)">
+            <summary>
+            Whether the current sub parser can satisfy the supplied property
+            based on the key and/or type
+            </summary>
+            <param name="key">Property key</param>
+            <param name="type">Property type</param>
+            <returns>True if current sub parser can parse, else false</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.TypedDictionarySubParser.Parse(Castle.MicroKernel.SubSystems.Conversion.IConversionManager,System.Xml.XmlNode,System.Type)">
+            <summary>
+            Parse the XML node for the property
+            </summary>
+            <param name="conversionManager">Current Castle Windsor conversion manager</param>
+            <param name="node">XML node containing the property data</param>
+            <param name="expectedType">Expected type of the property</param>
+            <returns>Parsed property value</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.Parser.TypedDictionarySubParser.Name">
+            <summary>
+            Name of the sub parser
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.Parser.GenericDictionarySubParser">
+            <summary>
+            A generic sub parser for dictionary without known key/value. This can handles properties defined as
+            dictionaries in the XML config file
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.GenericDictionarySubParser.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.GenericDictionarySubParser.CanParse(System.String,System.Type)">
+            <summary>
+            Whether the current sub parser can satisfy the supplied property
+            based on the key and/or type
+            </summary>
+            <param name="key">Property key</param>
+            <param name="type">Property type</param>
+            <returns>True if current sub parser can parse, else false</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.GenericDictionarySubParser.Parse(Castle.MicroKernel.SubSystems.Conversion.IConversionManager,System.Xml.XmlNode,System.Type)">
+            <summary>
+            Parse the XML node for the property
+            </summary>
+            <param name="conversionManager">Current Castle Windsor conversion manager</param>
+            <param name="node">XML node containing the property data</param>
+            <param name="expectedType">Expected type of the property</param>
+            <returns>Parsed property value</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.Parser.GenericDictionarySubParser.Name">
+            <summary>
+            Name of the sub parser
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.Parser.ListSubParser">
+            <summary>
+            A generic list sub parser. This can handle properties defined as lists in
+            XML config file
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ListSubParser.CanParse(System.String,System.Type)">
+            <summary>
+            Whether the current sub parser can satisfy the supplied property
+            based on the key and/or type
+            </summary>
+            <param name="key">Property key</param>
+            <param name="type">Property type</param>
+            <returns>True if current sub parser can parse, else false</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.Parser.ListSubParser.Parse(Castle.MicroKernel.SubSystems.Conversion.IConversionManager,System.Xml.XmlNode,System.Type)">
+            <summary>
+            Parse the XML node for the property
+            </summary>
+            <param name="conversionManager">Current Castle Windsor conversion manager</param>
+            <param name="node">XML node containing the property data</param>
+            <param name="expectedType">Expected type of the property</param>
+            <returns>Parsed property value</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.Parser.ListSubParser.Name">
+            <summary>
+            Name of the sub parser
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.ArgumentsParser">
+            <summary>
+            Castle Windsor properties parser
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ArgumentsParser.m_allTypes">
+            <summary>
+            All scanned types from the assemblies that match the 
+            given file match pattern supplied
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ArgumentsParser.m_conversionManager">
+            <summary>
+            Castle Windsor object conversion manager
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ArgumentsParser.m_container">
+            <summary>
+            Extended Windsor container
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ArgumentsParser.m_paramNames">
+            <summary>
+            Parameter names and type dictionary to be looked up
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.ArgumentsParser.m_subParsers">
+            <summary>
+            All registered sub parsers
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileMatchPattern">The file match pattern to be used
+              when scanning for assemblies</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fileMatchPatterns">A collection of file match patterns
+              to be used when scanning for assemblies</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(System.Reflection.Assembly)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="assembly">The assembly to be used when scanning for types</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.Assembly})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="assemblies">A collection of assemblies to be used when scanning for 
+            types</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fetcher">Assembly fetcher</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.#ctor(System.Collections.Generic.IEnumerable{Castle.Windsor.Extensions.AssemblyFetcher.IAssemblyFetcher})">
+            <summary>
+            Constructor
+            </summary>
+            <param name="fetchers">Assembly fetchers</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.AddSubParser(Castle.Windsor.Extensions.Parser.ISubParser)">
+            <summary>
+            Adds a sub parser
+            </summary>
+            <param name="parser">Sub parser to be added</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.RemoveSubParser(System.String)">
+            <summary>
+            Remove a sub parser
+            </summary>
+            <param name="name">Name of the sub parser to be removed</param>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.Parse(Castle.Windsor.Extensions.IExtendedWindsorContainer)">
+            <summary>
+            Parse the properties file
+            </summary>
+            <param name="container"></param>
+            <returns>Parsed properties</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.ProcessFile(System.String)">
+            <summary>
+            Processes an XML file
+            </summary>
+            <param name="file">XML file to be processed</param>
+            <returns>Parsed properties from the given file</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.ParsePropertiesNode(System.Xml.XmlNode)">
+            <summary>
+            Parses a properties node
+            </summary>
+            <param name="propsNode">The properties node</param>
+            <returns>A dictionary of parsed properties</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.ParseIncludeNode(System.Xml.XmlNode)">
+            <summary>
+            Parses an include node
+            </summary>
+            <param name="includeNode">The include node</param>
+            <returns>A dictionary of parsed properties</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.ArgumentsParser.GetRequiredParameters(Castle.Windsor.IWindsorContainer)">
+            <summary>
+            Gets the parameters that are required to resolve all registered
+            components successfully
+            </summary>
+            <param name="container">Extended windsor container</param>
+            <returns>A tuple of parameter name and its data type</returns>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.ArgumentsParser.IsParsingComplete">
+            <summary>
+            Flag indicating whether the properties parsing is complete
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.RelativePathSubDependencyResolver">
+            <summary>
+            Relative path dependency resolver
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.ParamsConfigKey">
+            <summary>
+            Parameters configuration key
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.PathTypeAttributeName">
+            <summary>
+            Path type attribute name
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.m_truePath">
+            <summary>
+            The true path of the currently executing assembly
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.PathConversions">
+            <summary>
+            Holds the supported conversion operations.
+            </summary>
+        </member>
+        <member name="F:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.m_typePathParameters">
+            <summary>
+            Cache of the type path parameters.
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.Resolve(Castle.MicroKernel.Context.CreationContext,Castle.MicroKernel.ISubDependencyResolver,Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Resolves the specified dependency.
+            </summary>
+            <param name="context">Creation context</param>
+            <param name="contextHandlerResolver">Parent resolver</param>
+            <param name="model">Model of the component that is requesting the dependency</param>
+            <param name="dependency">The dependcy to satisfy</param>
+            <returns><c>true</c> if the dependency can be satsfied by this resolver, else <c>false</c>.</returns>
+            <returns>The resolved dependency</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.CanResolve(Castle.MicroKernel.Context.CreationContext,Castle.MicroKernel.ISubDependencyResolver,Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Determines whether this sub dependency resolver can resolve the specified dependency.
+            </summary>
+            <param name="context">Creation context</param>
+            <param name="contextHandlerResolver">Parent resolver</param>
+            <param name="model">Model of the component that is requesting the dependency</param>
+            <param name="dependency">The dependcy to satisfy</param>
+            <returns><c>true</c> if the dependency can be satsfied by this resolver, else <c>false</c>.</returns>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.RelativePathSubDependencyResolver.GetRelativePathParameter(Castle.Core.ComponentModel,Castle.Core.DependencyModel)">
+            <summary>
+            Finds the parameter by looking at the cache, then in the model configuration.
+            </summary>
+            <param name="model">Model of the component that is requesting the dependency</param>
+            <param name="dependency">The dependcy to satisfy</param>
+            <returns>The relative path parameter</returns>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.RelativePathFacility">
+            <summary>
+            Relative path facility
+            </summary>
+        </member>
+        <member name="M:Castle.Windsor.Extensions.RelativePathFacility.Init">
+            <summary>
+            Initialise the facility
+            </summary>
+        </member>
+        <member name="T:Castle.Windsor.Extensions.RelativePathParameter">
+            <summary>
+            Relative path parameter
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.RelativePathParameter.Value">
+            <summary>
+            Config value
+            </summary>
+        </member>
+        <member name="P:Castle.Windsor.Extensions.RelativePathParameter.Type">
+            <summary>
+            Path type of this parameter
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,50 @@
+﻿<Window xmlns:ig="http://schemas.infragistics.com/xaml"  x:Class="TicketShop.Client.Wpf.Startup.MainContainer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:InfragstcDockManager="http://infragistics.com/DockManager"
+        Title="Ticket Shop Container" WindowState="Maximized" WindowStartupLocation="CenterScreen" Height="500" Width="500">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <ToolBar Name="mainToolbar"  Grid.Row="0" ItemsSource="{Binding Path=ToolBarButtonList}">
+            <ToolBar.ItemTemplate>
+                <DataTemplate>
+                    <Button Content="{Binding Path=Content}" Command="{Binding Path=Command}"></Button>
+                </DataTemplate>
+            </ToolBar.ItemTemplate>
+        </ToolBar>
+
+        <InfragstcDockManager:XamDockManager Name="controlDockManager" Grid.Row="1">
+            <InfragstcDockManager:DocumentContentHost>
+                <InfragstcDockManager:SplitPane Name="controlDocumentHostSplitPane">
+                    <InfragstcDockManager:TabGroupPane Name="controlMainTabGroupPane">
+                        <InfragstcDockManager:ContentPane Header="Start Page">
+                            <TextBlock Text="Start Page"></TextBlock>
+                        </InfragstcDockManager:ContentPane>
+                    </InfragstcDockManager:TabGroupPane>
+                </InfragstcDockManager:SplitPane>
+            </InfragstcDockManager:DocumentContentHost>
+
+            <!--<Infragstc:XamDockManager.Panes>
+                <Infragstc:SplitPane Infragstc:XamDockManager.InitialLocation="DockedTop">
+                    
+                    -->
+            <!--<Infragstc:TabGroupPane Name="controlSplitPaneTabGroupPaneTop">
+                        <Infragstc:ContentPane PinButtonVisibility="Collapsed" CloseButtonVisibility="Collapsed" WindowPositionMenuVisibility="Collapsed" head>
+                            <ToolBar MinHeight="70" Name="topToolBar">
+                                <TextBlock>Üst Menüler</TextBlock>
+                            </ToolBar>
+                        </Infragstc:ContentPane>
+                    </Infragstc:TabGroupPane>-->
+            <!--
+                </Infragstc:SplitPane>
+            </Infragstc:XamDockManager.Panes>-->
+        </InfragstcDockManager:XamDockManager>
+
+    </Grid>
+</Window>

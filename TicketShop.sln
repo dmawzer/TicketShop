@@ -1,0 +1,136 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{675F6A94-B8BC-4605-9270-0961692F9FEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Core", "TicketShop.Core\TicketShop.Core.csproj", "{C62CB2C7-4016-4DBF-8435-BC3506811B3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Server.Repository", "TicketShop.Server.Repository\TicketShop.Server.Repository.csproj", "{4528A28E-41F9-4D2C-9CFA-37724063DD68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Server.MessageHandler", "TicketShop.Server.MessageHandler\TicketShop.Server.MessageHandler.csproj", "{CD630F20-4955-40F2-875E-4053A1228F83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Server.Service", "TicketShop.Server.Service\TicketShop.Server.Service.csproj", "{456B0030-E104-46FA-BCC3-23833FA561CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Core.Messages", "TicketShop.Core.Messages\TicketShop.Core.Messages.csproj", "{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Client.Service", "TicketShop.Client.Service\TicketShop.Client.Service.csproj", "{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Server.WcfService", "TicketShop.Server.WcfService\TicketShop.Server.WcfService.csproj", "{B686AF16-9182-4EA6-8053-3C4F776881F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Server.WcfService.Core", "TicketShop.Server.WcfService.Core\TicketShop.Server.WcfService.Core.csproj", "{DE184F6E-65B9-46B3-A458-854216EB0821}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Client.Console", "TicketShop.Client.Console\TicketShop.Client.Console.csproj", "{229377AF-A0A9-4679-BA5E-86F40D76154C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketShop.Client.Wpf", "TicketShop.Client.Wpf\TicketShop.Client.Wpf.csproj", "{30511BFD-0B49-45C5-B5CB-1C25179DD604}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://dmawzer.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TicketShop.Client.Service\\TicketShop.Client.Service.csproj
+		SccProjectTopLevelParentUniqueName1 = TicketShop.sln
+		SccProjectName1 = TicketShop.Client.Service
+		SccLocalPath1 = TicketShop.Client.Service
+		SccProjectUniqueName2 = TicketShop.Core.Messages\\TicketShop.Core.Messages.csproj
+		SccProjectTopLevelParentUniqueName2 = TicketShop.sln
+		SccProjectName2 = TicketShop.Core.Messages
+		SccLocalPath2 = TicketShop.Core.Messages
+		SccProjectUniqueName3 = TicketShop.Core\\TicketShop.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = TicketShop.sln
+		SccProjectName3 = TicketShop.Core
+		SccLocalPath3 = TicketShop.Core
+		SccProjectUniqueName4 = TicketShop.Server.MessageHandler\\TicketShop.Server.MessageHandler.csproj
+		SccProjectTopLevelParentUniqueName4 = TicketShop.sln
+		SccProjectName4 = TicketShop.Server.MessageHandler
+		SccLocalPath4 = TicketShop.Server.MessageHandler
+		SccProjectUniqueName5 = TicketShop.Server.Repository\\TicketShop.Server.Repository.csproj
+		SccProjectTopLevelParentUniqueName5 = TicketShop.sln
+		SccProjectName5 = TicketShop.Server.Repository
+		SccLocalPath5 = TicketShop.Server.Repository
+		SccProjectUniqueName6 = TicketShop.Server.Service\\TicketShop.Server.Service.csproj
+		SccProjectTopLevelParentUniqueName6 = TicketShop.sln
+		SccProjectName6 = TicketShop.Server.Service
+		SccLocalPath6 = TicketShop.Server.Service
+		SccProjectUniqueName7 = TicketShop.Server.WcfService\\TicketShop.Server.WcfService.csproj
+		SccProjectTopLevelParentUniqueName7 = TicketShop.sln
+		SccProjectName7 = TicketShop.Server.WcfService
+		SccLocalPath7 = TicketShop.Server.WcfService
+		SccProjectUniqueName8 = TicketShop.Server.WcfService.Core\\TicketShop.Server.WcfService.Core.csproj
+		SccProjectTopLevelParentUniqueName8 = TicketShop.sln
+		SccProjectName8 = TicketShop.Server.WcfService.Core
+		SccLocalPath8 = TicketShop.Server.WcfService.Core
+		SccProjectUniqueName9 = TicketShop.Client.Console\\TicketShop.Client.Console.csproj
+		SccProjectTopLevelParentUniqueName9 = TicketShop.sln
+		SccProjectName9 = TicketShop.Client.Console
+		SccLocalPath9 = TicketShop.Client.Console
+		SccProjectUniqueName10 = TicketShop.Client.Wpf\\TicketShop.Client.Wpf.csproj
+		SccProjectTopLevelParentUniqueName10 = TicketShop.sln
+		SccProjectName10 = TicketShop.Client.Wpf
+		SccLocalPath10 = TicketShop.Client.Wpf
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C62CB2C7-4016-4DBF-8435-BC3506811B3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62CB2C7-4016-4DBF-8435-BC3506811B3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62CB2C7-4016-4DBF-8435-BC3506811B3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62CB2C7-4016-4DBF-8435-BC3506811B3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4528A28E-41F9-4D2C-9CFA-37724063DD68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4528A28E-41F9-4D2C-9CFA-37724063DD68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4528A28E-41F9-4D2C-9CFA-37724063DD68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4528A28E-41F9-4D2C-9CFA-37724063DD68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD630F20-4955-40F2-875E-4053A1228F83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD630F20-4955-40F2-875E-4053A1228F83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD630F20-4955-40F2-875E-4053A1228F83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD630F20-4955-40F2-875E-4053A1228F83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{456B0030-E104-46FA-BCC3-23833FA561CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{456B0030-E104-46FA-BCC3-23833FA561CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{456B0030-E104-46FA-BCC3-23833FA561CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{456B0030-E104-46FA-BCC3-23833FA561CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B686AF16-9182-4EA6-8053-3C4F776881F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B686AF16-9182-4EA6-8053-3C4F776881F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B686AF16-9182-4EA6-8053-3C4F776881F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B686AF16-9182-4EA6-8053-3C4F776881F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE184F6E-65B9-46B3-A458-854216EB0821}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE184F6E-65B9-46B3-A458-854216EB0821}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE184F6E-65B9-46B3-A458-854216EB0821}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE184F6E-65B9-46B3-A458-854216EB0821}.Release|Any CPU.Build.0 = Release|Any CPU
+		{229377AF-A0A9-4679-BA5E-86F40D76154C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{229377AF-A0A9-4679-BA5E-86F40D76154C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{229377AF-A0A9-4679-BA5E-86F40D76154C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{229377AF-A0A9-4679-BA5E-86F40D76154C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30511BFD-0B49-45C5-B5CB-1C25179DD604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30511BFD-0B49-45C5-B5CB-1C25179DD604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30511BFD-0B49-45C5-B5CB-1C25179DD604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30511BFD-0B49-45C5-B5CB-1C25179DD604}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C62CB2C7-4016-4DBF-8435-BC3506811B3B} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{4528A28E-41F9-4D2C-9CFA-37724063DD68} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{CD630F20-4955-40F2-875E-4053A1228F83} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{456B0030-E104-46FA-BCC3-23833FA561CC} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{4D5514E1-2EE8-4BFA-BE0B-F46181ABE6DA} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{2F7FF081-DAB3-42E2-BB6B-B7C9E0117DFC} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{B686AF16-9182-4EA6-8053-3C4F776881F5} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{DE184F6E-65B9-46B3-A458-854216EB0821} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{229377AF-A0A9-4679-BA5E-86F40D76154C} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+		{30511BFD-0B49-45C5-B5CB-1C25179DD604} = {675F6A94-B8BC-4605-9270-0961692F9FEA}
+	EndGlobalSection
+EndGlobal

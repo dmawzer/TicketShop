@@ -1,0 +1,4 @@
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\bin\Release\TicketShop.Core.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\bin\Release\TicketShop.Core.pdb
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Release\TicketShop.Core.dll
+D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Release\TicketShop.Core.pdb
