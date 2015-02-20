@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketShop.Core.Messages.Request
 {
-    public class GenericDeleteRequest<TModel>:GenericRequest<TModel>
+    public class GenericDeleteRequest<TModel> : GenericRequest<TModel>
     {
     }
 }

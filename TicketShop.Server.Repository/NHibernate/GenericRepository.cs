@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketShop.Core.Domain.Model;
 using TicketShop.Server.Repository.Core;
 
 namespace TicketShop.Server.Repository.NHibernate
 {
-    public class GenericRepository<TModel> : IGenericRepository<TModel> where TModel : class
+    public class GenericRepository<TModel> : IGenericRepository<TModel> where TModel : class, IDomainModel
     {
         private readonly ISessionFactory sessionFactory;
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketShop.Core.Domain.Model
 {
-    public class County
+    public class County : IDomainModel
     {
         public virtual int Id { get; set; }
 

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketShop.Core.Domain.Model;
 
 namespace TicketShop.Server.Repository.Core
 {
-    public interface IGenericRepository<TModel>
+    public interface IGenericRepository<TModel> where TModel : class, IDomainModel
     {
         TModel GetBy(int id);
         IList<TModel> GetAll();

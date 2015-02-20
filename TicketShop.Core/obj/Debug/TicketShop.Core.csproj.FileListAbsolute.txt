@@ -8,3 +8,8 @@ D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\bin\Debug\TicketShop.
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.dll
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.pdb
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.csprojResolveAssemblyReference.cache
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.dll
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core\bin\Debug\TicketShop.Core.pdb
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.csprojResolveAssemblyReference.cache
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.dll
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core\obj\Debug\TicketShop.Core.pdb

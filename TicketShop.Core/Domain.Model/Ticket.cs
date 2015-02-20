@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TicketShop.Core.Domain.Model
 {
-    public class Ticket
+    public class Ticket : IDomainModel
     {
         public virtual int Id { get; set; }
 

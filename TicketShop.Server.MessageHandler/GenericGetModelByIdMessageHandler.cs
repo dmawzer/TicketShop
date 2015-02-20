@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TicketShop.Core.Domain.Model;
 using TicketShop.Core.Messages.Request;
 using TicketShop.Core.Messages.Response;
 using TicketShop.Server.Service.Core;
 
 namespace TicketShop.Server.MessageHandler
 {
-    public class GenericGetModelByIdMessageHandler<TModel> : IGenericMessageHandler<GetModelByIdRequest, GenericResponse<TModel>>
+    public class GenericGetModelByIdMessageHandler<TModel> : IGenericMessageHandler<GetModelByIdRequest, GenericResponse<TModel>> where TModel : class, IDomainModel
     {
         private readonly IGenericService<TModel> genericService;
 

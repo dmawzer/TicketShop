@@ -12,3 +12,10 @@ D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core.Messages\bin\Debug\Ti
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.csprojResolveAssemblyReference.cache
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.dll
 D:\Projects\Projects.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.pdb
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\bin\Debug\TicketShop.Core.Messages.dll
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\bin\Debug\TicketShop.Core.Messages.pdb
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\bin\Debug\TicketShop.Core.dll
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\bin\Debug\TicketShop.Core.pdb
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.csprojResolveAssemblyReference.cache
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.dll
+D:\Projects\Project.TicketShop\TicketShop\TicketShop.Core.Messages\obj\Debug\TicketShop.Core.Messages.pdb

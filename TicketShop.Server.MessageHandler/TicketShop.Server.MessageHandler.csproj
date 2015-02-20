@@ -55,6 +55,10 @@
       <Project>{4d5514e1-2ee8-4bfa-be0b-f46181abe6da}</Project>
       <Name>TicketShop.Core.Messages</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TicketShop.Core\TicketShop.Core.csproj">
+      <Project>{c62cb2c7-4016-4dbf-8435-bc3506811b3b}</Project>
+      <Name>TicketShop.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\TicketShop.Server.Service\TicketShop.Server.Service.csproj">
       <Project>{456b0030-e104-46fa-bcc3-23833fa561cc}</Project>
       <Name>TicketShop.Server.Service</Name>

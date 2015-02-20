@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace TicketShop.Core.Domain.Model
 {
     [Serializable]
-    public class City
+    public class City : IDomainModel
     {
         public virtual int Id { get; set; }
 

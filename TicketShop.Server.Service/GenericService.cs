@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using TicketShop.Server.Repository.Core;
 using TicketShop.Server.Service.Core;
+using TicketShop.Core.Domain.Model;
 
 namespace TicketShop.Server.Service
 {
-    public class GenericService<TModel> : IGenericService<TModel>
+    public class GenericService<TModel> : IGenericService<TModel> where TModel : class, IDomainModel
     {
         private readonly IGenericRepository<TModel> repository;
 
