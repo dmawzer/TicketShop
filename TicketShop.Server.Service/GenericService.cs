@@ -9,7 +9,7 @@ using TicketShop.Core.Domain.Model;
 
 namespace TicketShop.Server.Service
 {
-    public class GenericService<TModel> : IGenericService<TModel> where TModel : class, IDomainModel
+    public class GenericService<TModel> : IGenericService<TModel> where TModel :  AbstractDomainModel
     {
         private readonly IGenericRepository<TModel> repository;
 

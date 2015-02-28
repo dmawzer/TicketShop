@@ -10,7 +10,7 @@ using TicketShop.Server.Service.Core;
 
 namespace TicketShop.Server.MessageHandler
 {
-    public class GenericDeleteMessageHandler<TModel> : IGenericMessageHandler<GenericDeleteRequest<TModel>, GenericResponse<TModel>> where TModel : class, IDomainModel
+    public class GenericDeleteMessageHandler<TModel> : IGenericMessageHandler<GenericDeleteRequest<TModel>, GenericResponse<TModel>> where TModel :  AbstractDomainModel
     {
         private readonly IGenericService<TModel> genericService;
 

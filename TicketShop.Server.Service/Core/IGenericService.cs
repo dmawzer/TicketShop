@@ -7,7 +7,7 @@ using TicketShop.Core.Domain.Model;
 
 namespace TicketShop.Server.Service.Core
 {
-    public interface IGenericService<TModel> where TModel : class, IDomainModel
+    public interface IGenericService<TModel> where TModel :  AbstractDomainModel
     {
         TModel GetBy(int id);
         IList<TModel> GetAll();

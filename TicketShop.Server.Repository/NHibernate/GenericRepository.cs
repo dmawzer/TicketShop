@@ -9,7 +9,7 @@ using TicketShop.Server.Repository.Core;
 
 namespace TicketShop.Server.Repository.NHibernate
 {
-    public class GenericRepository<TModel> : IGenericRepository<TModel> where TModel : class, IDomainModel
+    public class GenericRepository<TModel> : IGenericRepository<TModel> where TModel :  AbstractDomainModel
     {
         private readonly ISessionFactory sessionFactory;
 

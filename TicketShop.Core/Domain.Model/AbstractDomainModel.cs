@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace TicketShop.Core.Domain.Model
 {
-    public interface IDomainModel
+    public abstract class AbstractDomainModel
     {
+
     }
 }

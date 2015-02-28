@@ -7,7 +7,7 @@ using TicketShop.Core.Domain.Logical;
 
 namespace TicketShop.Core.Domain.Model
 {
-    public class Passenger : IDomainModel
+    public class Passenger : AbstractDomainModel
     {
         public virtual int Id { get; set; }
 

@@ -49,7 +49,7 @@
     <Compile Include="Domain.Model\Country.cs" />
     <Compile Include="Domain.Model\County.cs" />
     <Compile Include="Domain.Model\Driver.cs" />
-    <Compile Include="Domain.Model\IDomainModel.cs" />
+    <Compile Include="Domain.Model\AbstractDomainModel.cs" />
     <Compile Include="Domain.Model\Journey.cs" />
     <Compile Include="Domain.Model\JourneyAddress.cs" />
     <Compile Include="Domain.Model\Passenger.cs" />

@@ -10,7 +10,7 @@ using TicketShop.Server.Service.Core;
 
 namespace TicketShop.Server.MessageHandler
 {
-    public class GenericListMessageHandler<TModel> : IGenericMessageHandler<GenericListRequest<TModel>, GenericResponse<IList<TModel>>> where TModel : class, IDomainModel
+    public class GenericListMessageHandler<TModel> : IGenericMessageHandler<GenericListRequest<TModel>, GenericResponse<IList<TModel>>> where TModel :  AbstractDomainModel
     {
         private readonly IGenericService<TModel> genericService;
 
